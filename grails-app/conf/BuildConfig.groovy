@@ -37,9 +37,11 @@ grails.project.dependency.resolution = {
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
         // runtime 'mysql:mysql-connector-java:5.1.27'
+        compile 'com.github.rjeschke:txtmark:0.11'
     }
 
     plugins {
+        compile ":asset-pipeline:1.7.4"
         build(":release:3.0.1",
               ":rest-client-builder:1.0.3") {
             export = false
