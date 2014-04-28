@@ -6,7 +6,7 @@ class MarkdownAssetFile extends AbstractAssetFile {
     
 	static contentType = 'text/html'
 	static extensions = ['md']
-	static compiledExtension = 'md'
+	static compiledExtension = 'html'
 	static processors = [MarkdownProcessor]
 
 	String directiveForLine(String line) {
